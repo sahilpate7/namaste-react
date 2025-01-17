@@ -1,0 +1,25 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is react project by Sahil Pate",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sahilpate7/namaste-react.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Sahil Pate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sahilpate7/namaste-react/issues"
+  },
+  "homepage": "https://github.com/sahilpate7/namaste-react#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
