@@ -12,7 +12,6 @@ const Header = () => {
     // subscribe to the store using selector
 
     const cart = useSelector((store) => store.cart.items);
-    console.log(cart);
 
     return (
         <header className="py-4 bg-[#ff5200]  text-white shadow-xl">
