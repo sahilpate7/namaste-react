@@ -39,6 +39,7 @@ const Body = () => {
                 <div className={'text-center'}>
                     <input
                         className={'border border-gray-300 rounded-xl py-2 px-2 mr-5 max-w-sm w-full text-sm'}
+                        data-testid="search-input"
                         type={'text'}
                         value={searchText}
                         onChange={(e) => setSearchText(e.target.value)}

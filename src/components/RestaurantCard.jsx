@@ -5,7 +5,7 @@ import {Link} from "react-router";
 const RestaurantCard = ({restData}) => {
     const {name,cloudinaryImageId, areaName, cuisines,id } = restData?.info;
     return (
-        <div className="p-2 rounded-xl bg-gray-100 hover:shadow-xl transition" >
+        <div className="p-2 rounded-xl bg-gray-100 hover:shadow-xl transition" data-testid="restaurant-card">
             <Link to={"/restaurants/"+id}>
                 <img
                     src={CDN_URL + cloudinaryImageId}

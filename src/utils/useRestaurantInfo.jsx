@@ -9,10 +9,19 @@ const useRestaurantInfo = (resId) => {
     },[]);
 
     const fetchMenu = async () => {
-        const data = await fetch(MENU_API+resId);
-
-        const json = await data.json();
-        setRestaurantsInfo(json?.data);
+        try {
+            const response = await fetch(MENU_API+resId);
+            if (!response.ok) {
+                throw new Error('Network response was not ok.');
+            }
+            const data = await response.json();
+            if (!data) {
+                throw new Error("Empty response body");
+            }
+            setRestaurantsInfo(data?.data);
+        } catch (error) {
+            console.log(error);
+        }
     }
     return restaurantsInfo;
 }
